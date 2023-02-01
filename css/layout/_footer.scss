@@ -3,7 +3,7 @@ footer {
    background: #000;
    color: white;
    font-family: $typo;
-
+   
    .footer__wrapper {
       @include centrer;
       display: grid;
@@ -13,7 +13,7 @@ footer {
    }
 }
 .footer__news {
-
+   
    p, address, span {
       color: $couleur-gris;
       line-height: 25px;
@@ -37,7 +37,7 @@ footer {
    display: flex;
    flex-direction: column;
    justify-content: space-around;
-
+   
    a {
       text-decoration: none;
       color: white;
@@ -45,10 +45,7 @@ footer {
       line-height: 20px;
    }
    span {
-      display: block;
-      margin-top: 5px;
-      color: $couleur-gris;
-      font-size: 12px;
+      @include signature;
    }
 }
 @media screen and (max-width: 600px) {
@@ -57,7 +54,7 @@ footer {
          grid-template-columns: 1fr;
       }
    }
-
+   
 }
 @media screen and (min-width: 1000px) {
    footer {

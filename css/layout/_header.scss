@@ -67,7 +67,7 @@
       width: 100%;
    }
 }
-@media screen and (max-width: 550px) {
+@media screen and (max-width: 750px) {
    .header__img {
       flex-direction: column;
       width: 100%;
@@ -136,7 +136,7 @@ nav {
       }
    }
 }
-@media screen and (max-width: 550px) {
+@media screen and (max-width: 750px) {
    nav {
       display: none;
    }
@@ -176,7 +176,7 @@ nav {
    }
    .nav__rs{
       a i:hover {
-         transform: rotate(270deg);
+         transform: scaleX(-1);
       } 
    }
 }
