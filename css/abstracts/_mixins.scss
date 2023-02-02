@@ -10,6 +10,18 @@
    font-size: 12px;
 }
 
+@mixin barre {
+   content: "";
+   position: absolute;
+   height: 2px;
+   width: 50px;
+   background:$couleur-marron;
+   top: 50%;
+   left: 0;
+   transform: translateY(-50%);
+   display: block;
+}
+
 // @media screen and (max-width: 550px)
 // @media screen and (min-width: 550px)
 
