@@ -138,8 +138,23 @@ nav {
    }
 }
 @media screen and (max-width: 750px) {
+   header {
+      overflow: hidden;
+   }
    nav {
-      display: none;
+      transform: translateY(-500px);
+      transition: $transi;
+   }
+   .nav__a {
+      display: flex;
+      flex-direction: column;
+
+      a::after {
+         display: none;
+      }
+   }
+   .__is-Active {
+      transform: translateY(-20px);
    }
 }
 @media screen and (min-width: 1000px) {
